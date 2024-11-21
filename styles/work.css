@@ -1,0 +1,50 @@
+.work {
+    background-color: #871b1b;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.work p {
+    color: white;
+    font-size: 30px;
+}
+
+.carousel {
+    width: 80%;
+    max-width: 1200px; /* Set a maximum width */
+    
+}
+
+
+.carousel-inner img {
+    max-height: 500px; /* Set the height of the images */
+    object-fit: cover; /* Ensure images fill the height without stretching */
+}
+
+.carousel-control-prev-icon {
+    background-image: none; /* Remove default icon */
+    border: solid 2px red; /* Set arrow color (black) */
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(135deg); /* Create arrow shape */
+    color: #000; /* Adjust arrow color */
+}
+
+.carousel-control-next-icon {
+    background-image: none; /* Remove default icon */
+    border: solid 2px red; /* Set arrow color (black) */
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(-45deg); /* Create arrow shape */
+    color: #000; /* Adjust arrow color */
+}
+
+.work-link {
+    text-decoration: underline;
+}

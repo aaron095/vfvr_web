@@ -1,0 +1,144 @@
+.quote {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.message-button p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.message-button {
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-top: 100px;
+}
+
+.services {
+    background-image: url("/images/Artboard+2-100.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 50px;
+    
+}
+
+@media (max-width: 1400px) {
+    .services {
+        height: 200vh;
+    }
+}
+
+.prices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-list-title {
+    font-size: 90px;
+    color: white;
+    margin-top: 50px;
+}
+
+.price-details {
+    color: white;
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.grid-packages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+}
+
+.package-name {
+    font-size: 40px;
+    
+}
+
+.package-info li {
+    
+    line-height: 3;
+}
+
+.add-ons {
+    background: linear-gradient(to top, #000000 , #871b1b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.add-on-title {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.add-ons ul {
+    list-style-type: none;
+}
+
+.service-link {
+    text-decoration: underline;
+}
+
+.service-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+}
+
+.service-box-add {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.service-box ul {
+    list-style-type: none;
+}
+
+@media (max-width: 800px) {
+    .grid-packages {
+        display: grid;
+      grid-template-columns: 1fr 1fr; /* Switch to 2 columns */
+    }
+}
+
+@media (max-width: 500px) {
+    .services {
+        height: 300vh;
+    }
+
+   .grid-packages {
+        display: grid; /* Ensure grid is active */
+        grid-template-columns: 1fr; /* Switch to 1 column */
+    }
+
+    .service-box,
+    .service-box-add {
+        margin-bottom: 20px; /* Prevent overlapping */
+    }
+    
+
+    .price-details {
+        font-size: 15px;
+    }
+}
